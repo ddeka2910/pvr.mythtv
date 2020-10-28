@@ -22,7 +22,19 @@ matrix:
       sudo: required
       compiler: clang
     - os: osx
+      arch: ppc64le
       osx_image: xcode10.2
+    #powerjobs
+    - os: linux
+      arch: ppc64le
+      dist: xenial
+      sudo: required
+      compiler: gcc
+    - os: linux
+      arch: ppc64le
+      dist: xenial
+      sudo: required
+      compiler: clang    
 
 #
 # Some of the OS X images don't have cmake, contrary to what people 
